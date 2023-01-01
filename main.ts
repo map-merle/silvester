@@ -1,4 +1,6 @@
 input.onButtonPressed(Button.A, function () {
+    music.playMelody("C C E D D F E E ", 300)
+    basic.pause(200)
     basic.showString("Frohes")
     basic.showString("neues")
     basic.showString("Jahr")
@@ -35,7 +37,7 @@ input.onButtonPressed(Button.A, function () {
         basic.showLeds(`
             . . . . .
             . . . . .
-            # . . . #
+            # # # # #
             . . . . .
             . . . . .
             `)
@@ -91,7 +93,7 @@ input.onButtonPressed(Button.A, function () {
         basic.showLeds(`
             . . . . .
             . . . . .
-            # . . . #
+            # # # # #
             . . . . .
             . . . . .
             `)
@@ -126,6 +128,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    basic.pause(200)
     music.playMelody("C C5 B F A G C E ", 500)
     basic.showString("Guten Rutsch")
     basic.showString("ins neue Jahr")
@@ -170,4 +173,80 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
     }
+    for (let index = 0; index < 2; index++) {
+        basic.showIcon(IconNames.Happy)
+        basic.showLeds(`
+            . . . . .
+            . # . . .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
+    for (let index = 0; index < 2; index++) {
+        basic.showIcon(IconNames.Happy)
+        basic.showLeds(`
+            . # . # .
+            . . . . .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+        basic.showLeds(`
+            . # . # .
+            . . . . .
+            # . . . #
+            # . . . #
+            . # # # .
+            `)
+    }
+    basic.pause(500)
+    basic.showLeds(`
+        # . . . #
+        # # . # #
+        # . # . #
+        # . . . #
+        # . . . #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        . # # # .
+        . # . # .
+        . # . # .
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        # . . . #
+        # # # # #
+        # . # . #
+        # . . # #
+        # . . . #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . # . . #
+        . # . # .
+        . # # . .
+        . # . # .
+        . # . . #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . . # # #
+        . . # . .
+        . . . # .
+        . . . . #
+        . . # # #
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . # # # .
+        . # . . .
+        . # # . .
+        . # . . .
+        . # # # .
+        `)
+    music.playMelody("C5 A F A C5 A F A ", 509)
 })
